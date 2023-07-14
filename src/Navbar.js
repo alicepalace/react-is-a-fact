@@ -4,7 +4,8 @@ const Navbar = () => {
             <h1>The Sickly E-Girl</h1>
             <div className="links">
                 <a href="/">Home</a>
-                <a href="/create">New Exercise</a>
+                <a href="/add">My Exercises</a>
+                <a href="/create">Add A New Exercise</a>
             </div>
         </nav>
     );
