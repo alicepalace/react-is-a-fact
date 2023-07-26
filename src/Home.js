@@ -1,20 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ExercisesList from './ExercisesList';
 
 const Home = () => {
-    //let name = 'emo';
-    const [name, setName] = useState('alice');
-    const [age, setAge] = useState(25);
 
-    const handleClick = () => {
-        setName('elmo');
-        setAge(30);
+    const [exercises, setExercises] = useState([
+        { name: 'Glute Bridge', muscle: 'Glutes', author: 'alice', id: 1 },
+        { name: 'Plank', muscle: 'Rectus abdominis', author: 'alice', id: 2 },
+        { name: 'Prone-Y', muscle: 'Lower Trapezius', author: 'alice', id: 3 }
+    ]);
+
+    const handleDelete = (id) => {
+        const newExercises = exercises.filter(exercises => exercises.id !== id);
+        setExercises(newExercises);
     }
+
+    useEffect(() => {
+        console.log('use effect ran');
+        console.log(exercises);
+    });
 
     return (
         <div className="home">
             <h2>Home Page (Birthing Site)</h2>
-            <p>{ name } is { age } years old</p>
-            <button onClick={handleClick}>click me</button>
+            <ExercisesList exercises={exercises} title="All Exercises!" handleDelete = {handleDelete}/>
+            {/* <ExercisesList exercises={exercises.filter((exercise) => exercise.author === 'alice')} title="Alice's exercises" /> */}
         </div>
     );
 }
