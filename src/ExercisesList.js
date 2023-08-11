@@ -1,4 +1,4 @@
-const ExercisesList = ({ exercises, title, handleDelete }) => {
+const ExercisesList = ({ exercises, title}) => {
 
     return ( 
         <div className="exercise-list">
@@ -7,7 +7,6 @@ const ExercisesList = ({ exercises, title, handleDelete }) => {
                 <div className="exercise-preview" key={exercise.id}>
                     <h2>{ exercise.name }</h2>
                     <p>created by { exercise.author }</p>
-                    <button onClick={() => handleDelete(exercise.id)}>delete exercise</button>
                 </div>
             ))}
         </div>

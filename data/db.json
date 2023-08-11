@@ -1,0 +1,22 @@
+{
+    "exercises": [
+      {
+        "name": "Plank",
+        "muscle": "Rectus abdominis",
+        "author": "jason",
+        "id": 1
+      },
+      {
+        "name": "Pull Up",
+        "muscle": "Biceps",
+        "author": "jason",
+        "id": 2
+      },
+      {
+        "name": "Prone-Y",
+        "muscle": "Lower Trapezius",
+        "author": "alice",
+        "id": 3
+      }
+    ]
+}
