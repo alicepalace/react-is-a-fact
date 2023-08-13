@@ -1,9 +1,10 @@
 import React from 'react';
 import useFetch from './useFetch';
+import { Link } from 'react-router-dom';
 
 const ExercisesList = () => {
 
-    const { exercises, isPending, error } = useFetch('http://localhost:8000/exercises');
+    const { data: exercises, isPending, error } = useFetch('http://localhost:8000/exercises');
 
     return (
         <div className="exercise-list">
@@ -12,8 +13,10 @@ const ExercisesList = () => {
             {isPending && <div>Loading... </div>}
             {exercises && exercises.map((exercise) => (
                 <div className="exercise-preview" key={exercise.id}>
-                    <h2>{exercise.name}</h2>
-                    <p>created by {exercise.author}</p>
+                    <Link to={`/exercises/${exercise.id}`}>
+                        <h2>{exercise.name}</h2>
+                        <p>created by {exercise.author}</p>
+                    </Link>
                 </div>
             ))}
         </div>

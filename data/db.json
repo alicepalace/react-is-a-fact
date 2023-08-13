@@ -1,22 +1,34 @@
 {
-    "exercises": [
-      {
-        "name": "Plank",
-        "muscle": "Rectus abdominis",
-        "author": "jason",
-        "id": 1
-      },
-      {
-        "name": "Pull Up",
-        "muscle": "Biceps",
-        "author": "jason",
-        "id": 2
-      },
-      {
-        "name": "Prone-Y",
-        "muscle": "Lower Trapezius",
-        "author": "alice",
-        "id": 3
-      }
-    ]
+  "exercises": [
+    {
+      "name": "Prone-Y",
+      "muscle": "Lower Trapezius",
+      "author": "alice",
+      "id": 3
+    },
+    {
+      "name": "Push-up",
+      "muscle": "Pectoralis major",
+      "author": "Alice",
+      "id": 4
+    },
+    {
+      "name": "Deadlift",
+      "muscle": "Glute Max",
+      "author": "Alice",
+      "id": 5
+    },
+    {
+      "name": "Face pull",
+      "muscle": "Rear delts",
+      "author": "Alice",
+      "id": 6
+    },
+    {
+      "name": "Single-leg deadlift",
+      "muscle": "Glute max",
+      "author": "Alice",
+      "id": 7
+    }
+  ]
 }

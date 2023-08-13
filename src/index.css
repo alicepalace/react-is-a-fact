@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Frijole&family=VT323&display=swap');
 
 /* base styles */
- * {
+* {
   margin: 0;
   font-family: 'Chakra Petch', sans-serif;
   color: #333;
 }
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -14,20 +15,25 @@
   margin: 0 auto;
   border-bottom: 1px solid #c0a2a2;
 }
+
 .navbar h1 {
   color: #5599c4;
 }
+
 .navbar .links {
   margin-left: auto;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: #43c55f;
 }
+
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -40,11 +46,75 @@
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
 }
+
 .exercise-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 .exercise-preview h2 {
   font-size: 20px;
   color: #43c55f;
   margin-bottom: 8px;
+}
+
+.exercise-preview a {
+  text-decoration: none;
+}
+
+/* exercise details page */
+.exercise-details h2 {
+  font-size: 20px;
+  color: #e816c9;
+  margin-bottom: 10px;
+}
+
+.exercise-details div {
+  margin: 20px 0;
+}
+
+.exercise-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #824099;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: #84379d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
